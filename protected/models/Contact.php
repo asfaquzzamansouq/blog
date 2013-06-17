@@ -1,18 +1,6 @@
 <?php
 
-/**
- * This is the model class for table "{{user}}".
- *
- * The followings are the available columns in table '{{user}}':
- * @property integer $id
- * @property string $username
- * @property string $password
- * @property string $email
- * @property string $profile
- *
- * The followings are the available model relations:
- * @property Post[] $posts
- */
+
 class Contact extends CActiveRecord
 {
 	/**
@@ -42,8 +30,6 @@ class Contact extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name, email', 'required')
-			
-			
 		);
 	}
 
@@ -59,9 +45,6 @@ class Contact extends CActiveRecord
 		);
 	}
 
-	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
-	 */
+	
 	
 }
