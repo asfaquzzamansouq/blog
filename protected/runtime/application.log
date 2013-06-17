@@ -105,3 +105,62 @@ REQUEST_URI=/index.php?r=site/contact
 in /usr/share/nginx/www/blog/protected/models/ContactForm.php (49)
 in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
 in /usr/share/nginx/www/blog/index.php (13)
+2013/06/17 13:06:34 [error] [php] Creating default object from empty value (/usr/share/nginx/www/blog/protected/models/ContactForm.php:54)
+Stack trace:
+#0 /usr/share/nginx/www/yii-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /usr/share/nginx/www/yii-test/framework/web/CController.php(286): SiteController->runAction()
+#2 /usr/share/nginx/www/yii-test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /usr/share/nginx/www/yii-test/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /usr/share/nginx/www/yii-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /usr/share/nginx/www/yii-test/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /usr/share/nginx/www/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/contact
+in /usr/share/nginx/www/blog/protected/models/ContactForm.php (54)
+in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
+in /usr/share/nginx/www/blog/index.php (13)
+2013/06/17 13:07:33 [error] [php] Creating default object from empty value (/usr/share/nginx/www/blog/protected/models/ContactForm.php:54)
+Stack trace:
+#0 /usr/share/nginx/www/yii-test/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /usr/share/nginx/www/yii-test/framework/web/CController.php(286): SiteController->runAction()
+#2 /usr/share/nginx/www/yii-test/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /usr/share/nginx/www/yii-test/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /usr/share/nginx/www/yii-test/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /usr/share/nginx/www/yii-test/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /usr/share/nginx/www/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/contact
+in /usr/share/nginx/www/blog/protected/models/ContactForm.php (54)
+in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
+in /usr/share/nginx/www/blog/index.php (13)
+2013/06/17 13:17:53 [error] [exception.CException] exception 'CException' with message 'Property "Contact.subject" is not defined.' in /usr/share/nginx/www/yii-test/framework/base/CComponent.php:173
+Stack trace:
+#0 /usr/share/nginx/www/yii-test/framework/db/ar/CActiveRecord.php(159): CComponent->__set('subject', 'aa')
+#1 /usr/share/nginx/www/blog/protected/models/ContactForm.php(49): CActiveRecord->__set('subject', 'aa')
+#2 /usr/share/nginx/www/blog/protected/controllers/SiteController.php(68): ContactForm->saveContact()
+#3 /usr/share/nginx/www/yii-test/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#4 /usr/share/nginx/www/yii-test/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /usr/share/nginx/www/yii-test/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /usr/share/nginx/www/yii-test/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/www/yii-test/framework/web/CWebApplication.php(282): CController->run('contact')
+#8 /usr/share/nginx/www/yii-test/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#9 /usr/share/nginx/www/yii-test/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /usr/share/nginx/www/blog/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=site/contact
+HTTP_REFERER=http://www.asfaquz-blog.com/index.php?r=site/contact
+---
+2013/06/17 13:27:17 [warning] [application] Failed to set unsafe attribute "subject" of "Contact".
+in /usr/share/nginx/www/blog/protected/models/ContactForm.php (47)
+in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
+in /usr/share/nginx/www/blog/index.php (13)
+2013/06/17 13:27:17 [warning] [application] Failed to set unsafe attribute "body" of "Contact".
+in /usr/share/nginx/www/blog/protected/models/ContactForm.php (47)
+in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
+in /usr/share/nginx/www/blog/index.php (13)
+2013/06/17 13:28:13 [warning] [application] Failed to set unsafe attribute "subject" of "Contact".
+in /usr/share/nginx/www/blog/protected/models/ContactForm.php (47)
+in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
+in /usr/share/nginx/www/blog/index.php (13)
+2013/06/17 13:28:13 [warning] [application] Failed to set unsafe attribute "body" of "Contact".
+in /usr/share/nginx/www/blog/protected/models/ContactForm.php (47)
+in /usr/share/nginx/www/blog/protected/controllers/SiteController.php (68)
+in /usr/share/nginx/www/blog/index.php (13)

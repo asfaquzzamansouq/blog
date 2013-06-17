@@ -42,13 +42,18 @@ class ContactForm extends CFormModel
         
         public function saveContact(){
             
-            
-            print_r($_POST);exit;
+             
             $contact=new Contact();
-            $contact->name=  $this->name;
-            $cotact->email=  $this->email;
-            $contact->date=time();
-            $contact->save();
+            $contact->attributes=$_POST['ContactForm'];
+			
+			if($contact->save()){
+				
+				echo "Inserted";
+			}
+			else{
+				echo "Failed";
+			}
+			exit;
             
             
         }
