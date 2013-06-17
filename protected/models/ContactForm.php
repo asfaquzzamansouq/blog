@@ -41,8 +41,7 @@ class ContactForm extends CFormModel
 	}
         
         public function saveContact(){
-            
-             
+                         
             $contact=new Contact();
             $contact->attributes=$_POST['ContactForm'];
 			
